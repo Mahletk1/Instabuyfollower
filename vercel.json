@@ -1,9 +1,16 @@
 {
     "redirects": [
       {
-        "source": "/(?!$)(.*)",
+        "source": "/(.*)",
         "destination": "/",
-        "permanent": true
+        "permanent": true,
+        "has": [
+          {
+            "type": "path",
+            "value": "/(.+)"
+          }
+        ]
       }
     ]
   }
+  
