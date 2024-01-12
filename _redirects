@@ -1,7 +1,1 @@
-# Serve static assets directly
-/assets/*    /assets/:splat    200
-/css/*       /css/:splat       200
-/js/*        /js/:splat        200
-
-# Redirect all non-static asset paths to the root URL
-/index.html/*    /index.html   301!
+/*    /    301!
