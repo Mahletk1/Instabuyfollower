@@ -4,4 +4,4 @@
 /js/*        /js/:splat        200
 
 # Redirect all non-static asset paths to the root URL
-/*    /    301!
+/index.html/*    /index.html   301!
