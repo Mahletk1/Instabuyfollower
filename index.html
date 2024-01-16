@@ -56,8 +56,10 @@
           <h2>Get Real and Instant Instagram Followers</h2>
         </div>
       </div>
+      
       <div class="text-center">
         <a href="#about" class="btn-get-started scrollto">About Us</a>
+        <a href="" class="btn-get-started scrollto getStarted">Get Started</a>
       </div>
 
       <div class="row icon-boxes">
@@ -242,6 +244,7 @@
   const modal = document.getElementById('contactModal');
   const btn = document.querySelector('.cta .cta-btn');
   const Aboutbtn = document.querySelector('.about .cta-btn');
+  const GetStarted = document.querySelector('.getStarted');
   const closeBtn = document.querySelector('.close');
 
   // Display modal when "Contact Us Now!" is clicked
@@ -251,6 +254,11 @@
   });
 
   Aboutbtn.addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent the default action of the anchor link
+    modal.style.display = 'block';
+  });
+
+  GetStarted.addEventListener('click', function (e) {
     e.preventDefault(); // Prevent the default action of the anchor link
     modal.style.display = 'block';
   });
